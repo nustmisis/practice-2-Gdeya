@@ -6,23 +6,66 @@
 
 @author: workk
 """
+import sys
 
-L = [1, 2, 4, 8, 16, 32, 64]
-X = 5
-found = False
-i = 0
-while not found and i < len(L) :
-    if 2 ** X == L[i] :
-        found = True
-    else:
-        i = i + 1
+#Изначальный код
+# L = [1, 2, 4, 8, 16, 32, 64]
+# X = 5
+# found = False
+# i = 0
+# while not found and i < len(L) :
+#     if 2 ** X == L[i] :
+#         found = True
+#     else:
+#         i = i + 1
 
-if found:
-    print('at index', i)
-else:
-    print(X, 'not found')
-    
-    
+# if found:
+#     print('at index', i)
+# else:
+#     print(X, 'not found')
+
+#а)
+# L = [1, 2, 4, 8, 16, 32, 64]
+# X = 5
+# i = 0
+# while i < len(L) :
+#     if 2 ** X == L[i] :
+#         print('at index', i)
+#         sys.exit()
+#     else:
+#         i = i + 1
+# print(X, 'not found')
+
+#б)
+# L = [1, 2, 4, 8, 16, 32, 64]
+# X = 5
+# for i,l in L:
+#     if 2 ** X == l :
+#         print('at index', i)
+#         sys.exit()
+#     else:
+#         i = i + 1
+# print(X, 'not found')
+
+#в)
+# L = [1, 2, 4, 8, 16, 32, 64]
+# X = 5
+# if 2 ** X in L:
+#     print('at index', L.index(2 ** X))
+# else: 
+#     print(X, 'not found')
+
+#г)
+# L = [2 ** i for i in range 7]
+# так лучше
+
+#д)
+#лучше сразу до цикла посчитать 2 ** X и сравнивать 
+#
+
+#е) 
+# L = list(map(lambda x: 2 ** x, range(0,7)))
+#
     
 '''
 Код явно написан с использование альетрнативной логики.

@@ -16,3 +16,10 @@ Created on Fri Sep 22 15:05:53 2023
 это в сообщении
 """
 
+car_number = str(input())
+if(len(car_number) == 6 and car_number[0:3] == car_number[0:3].upper() and car_number[0:3].isalpha() and car_number[3:].isnumeric):
+    print('Номер старого формата')
+elif(len(car_number) == 7 and car_number[0:4].isnumeric and car_number[4:] == car_number[4:].upper() and car_number[4:].isalpha()):
+    print('Номер нового формата')
+else:
+    print('Некорректный номер')
